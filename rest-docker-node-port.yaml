@@ -6,5 +6,7 @@ spec:
   selector:
     component: rest-pod
   ports:
-    - port: 8080
+    - port: 8000
+      targetPort: 8080
+      nodePort: 8081
   type: NodePort
